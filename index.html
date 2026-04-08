@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omar Shakeel Ahmed Attar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="assets/data.js"></script>
+</head>
+<body>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span id="toggleIcon">◑ Dark</span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">O · S · A · A</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section class="section" id="home">
+    <div class="home-inner">
+      <div class="home-left">
+        <p class="eyebrow fade-in">B.Tech CSE — AIML &nbsp;·&nbsp; MIT Vishwaprayag University</p>
+        <h1 class="home-name fade-in">Omar<br><em>Shakeel Ahmed</em><br>Attar</h1>
+        <p class="home-tagline fade-in">Engineer. Thinker. Athlete.</p>
+        <p class="home-intro fade-in">
+          A curious and driven Computer Science student with a wide range of interests — 
+          from building intelligent systems to reading a good book or playing football. 
+          I take on challenges with a calm head and enjoy learning through doing.
+        </p>
+        <div class="home-actions fade-in">
+          <a href="#projects" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="home-right fade-in">
+        <div class="photo-container">
+          <img id="profileImg" src="" alt="Omar Shakeel Ahmed Attar" class="profile-photo"/>
+        </div>
+      </div>
+    </div>
+    <div class="home-rule">
+      <span class="rule-text">Scroll to explore</span>
+      <div class="rule-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section alt-bg" id="about">
+    <div class="container">
+      <div class="section-label">01</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-col reveal">
+          <p class="about-lead">
+            I'm a second-year B.Tech student in Computer Science (AI & ML) at MIT Vishwaprayag University, 
+            with a genuine interest in technology and how it applies to real problems.
+          </p>
+          <p class="about-body">
+            Outside of academics, I play football, read widely, and enjoy exploring ideas across different fields. 
+            I learn quickly, stay composed under pressure, and work well in a team. 
+            I'm always looking to build on what I know — through coursework, certifications, and hands-on projects.
+          </p>
+        </div>
+        <div class="about-col reveal">
+          <div class="detail-block">
+            <span class="detail-label">Degree</span>
+            <span class="detail-value">B.Tech — Computer Science (AI & ML)</span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Institution</span>
+            <span class="detail-value">MIT Vishwaprayag University</span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Year</span>
+            <span class="detail-value">2025 — 26</span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Interests</span>
+            <span class="detail-value">Artificial Intelligence · Football · Literature · Technology</span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Goals</span>
+            <span class="detail-value">To grow as an engineer, work on meaningful projects, and build a career that reflects my values.</span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Strength</span>
+            <span class="detail-value">I work through problems logically and don't let pressure get to me — I think clearly, figure things out, and keep moving.</span>
+          </div>
+          <div class="skills-wrap">
+            <span class="detail-label">Skills</span>
+            <div class="skills-row">
+              <span class="skill">Python</span>
+              <span class="skill">MATLAB</span>
+              <span class="skill">Machine Learning</span>
+              <span class="skill">HTML / CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Design Thinking</span>
+              <span class="skill">Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-label">02</div>
+      <h2 class="section-title">Certificates & Achievements</h2>
+
+      <h3 class="sub-heading reveal">Certificates</h3>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-issuer">Coursera · Vanderbilt University</span>
+            <span class="cert-date">Apr 2026</span>
+          </div>
+          <h4 class="cert-title">Introduction to Programming with MATLAB</h4>
+          <p class="cert-desc">
+            Completed a course by Vanderbilt University covering programming fundamentals in MATLAB — 
+            variables, loops, functions, and data visualisation.
+          </p>
+          <button class="cert-view" onclick="openPDF(MATLAB_PDF, 'MATLAB Certificate')">View Certificate →</button>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-issuer">Coursera · MIT Vishwaprayag University</span>
+            <span class="cert-date">Apr 2026</span>
+          </div>
+          <h4 class="cert-title">Revisiting Chemistry — Preparatory Course for ACEAS1201</h4>
+          <p class="cert-desc">
+            Completed a preparatory chemistry course offered by MIT Vishwaprayag University through Coursera, 
+            covering core concepts relevant to applied engineering chemistry.
+          </p>
+          <button class="cert-view" onclick="openPDF(CHEM_PDF, 'Chemistry Certificate')">View Certificate →</button>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <span class="cert-date">10 Feb 2026</span>
+          </div>
+          <h4 class="cert-title">Introduction to Modern AI</h4>
+          <p class="cert-desc">
+            Awarded by Cisco Networking Academy for completing their Modern AI programme — 
+            covering AI fundamentals, machine learning basics, and intelligent systems.
+          </p>
+          <button class="cert-view" onclick="openPDF(CISCO_PDF, 'Cisco Modern AI Certificate')">View Certificate →</button>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-issuer">NASSCOM FutureSkills · INDIAai</span>
+            <span class="cert-date">09 Feb 2026</span>
+          </div>
+          <h4 class="cert-title">Yuva AI for All</h4>
+          <p class="cert-desc">
+            Certificate of Participation from NASSCOM FutureSkills Prime and INDIAai under the 
+            MeitY–NASSCOM Digital Skilling Initiative for completing the Yuva AI for All programme.
+          </p>
+          <button class="cert-view" onclick="openPDF(YUVA_PDF, 'Yuva AI Certificate')">View Certificate →</button>
+        </div>
+
+      </div>
+
+      <h3 class="sub-heading reveal" style="margin-top:4rem;">Academic Projects</h3>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-tag">AI for All</span>
+            <span class="timeline-year">2025 — 26</span>
+          </div>
+          <div class="timeline-body">
+            <h4>AI4A Project</h4>
+            <p>Developed an AI-based solution as part of the NASSCOM Yuva AI for All programme — 
+            covering dataset understanding, model building, and results presentation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-tag">Design Thinking</span>
+            <span class="timeline-year">2025 — 26</span>
+          </div>
+          <div class="timeline-body">
+            <h4>Design Thinking Project</h4>
+            <p>Applied the Design Thinking framework — user research, problem definition, ideation, 
+            prototyping and testing — to develop a solution to a real user problem.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-tag">ACE</span>
+            <span class="timeline-year">2025 — 26</span>
+          </div>
+          <div class="timeline-body">
+            <h4>ACE Project</h4>
+            <p>Contributed to the ACE (Activity, Community & Engineering) project — 
+            a collaborative academic initiative involving team planning, execution, and delivery under mentorship.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section alt-bg" id="projects">
+    <div class="container">
+      <div class="section-label">03</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-list">
+
+        <div class="project-item reveal">
+          <div class="project-number">01</div>
+          <div class="project-info">
+            <span class="project-tag-label">AI / Machine Learning</span>
+            <h3 class="project-name">AI for All — AI4A Project</h3>
+            <p>Built as part of the NASSCOM Yuva AI for All initiative. Applied machine learning to a 
+            structured real-world problem — covering data understanding, model building, and presenting results.</p>
+            <div class="project-stack">
+              <span>Python</span><span>Machine Learning</span><span>Data Analysis</span>
+            </div>
+            <a href="https://github.com/omer10ahmed47-ai" target="_blank" class="btn-sm-primary">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-number">02</div>
+          <div class="project-info">
+            <span class="project-tag-label">UX · Human-Centred Design</span>
+            <h3 class="project-name">Design Thinking Project</h3>
+            <p>A design sprint following the five-stage Design Thinking methodology. 
+            Conducted user research, mapped pain points, ideated solutions, and built a tested prototype.</p>
+            <div class="project-stack">
+              <span>Figma</span><span>User Research</span><span>Prototyping</span>
+            </div>
+            <a href="https://github.com/omer10ahmed47-ai" target="_blank" class="btn-sm-primary">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-number">03</div>
+          <div class="project-info">
+            <span class="project-tag-label">Community · Engineering</span>
+            <h3 class="project-name">ACE Project</h3>
+            <p>A collaborative project completed as part of the university ACE programme — 
+            cross-functional teamwork, structured planning, and delivering a defined outcome under mentorship.</p>
+            <div class="project-stack">
+              <span>Teamwork</span><span>Problem Solving</span><span>Engineering</span>
+            </div>
+            <a href="https://github.com/omer10ahmed47-ai" target="_blank" class="btn-sm-primary">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-label">04</div>
+      <h2 class="section-title">Gallery</h2>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="certificate">Certificates</button>
+        <button class="filter-btn" data-filter="photo">Photos</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal" data-category="photo">
+          <div class="gallery-img-wrap" onclick="openPhotoModal()">
+            <img id="galleryProfileImg" src="" alt="Omar Attar"/>
+            <div class="gallery-hover-label">View Photo</div>
+          </div>
+          <div class="gallery-caption">Omar Shakeel Ahmed Attar</div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="certificate">
+          <div class="gallery-img-wrap cert-thumb" onclick="openPDF(MATLAB_PDF, 'MATLAB Certificate')">
+            <div class="cert-thumb-inner">
+              <div class="cert-thumb-logo">coursera</div>
+              <div class="cert-thumb-title">Programming with MATLAB</div>
+              <div class="cert-thumb-issuer">Vanderbilt University</div>
+              <div class="cert-thumb-date">Apr 2026</div>
+            </div>
+            <div class="gallery-hover-label">Open Certificate →</div>
+          </div>
+          <div class="gallery-caption">Coursera — MATLAB</div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="certificate">
+          <div class="gallery-img-wrap cert-thumb" onclick="openPDF(CHEM_PDF, 'Chemistry Certificate')">
+            <div class="cert-thumb-inner">
+              <div class="cert-thumb-logo">coursera</div>
+              <div class="cert-thumb-title">Revisiting Chemistry</div>
+              <div class="cert-thumb-issuer">MIT Vishwaprayag University</div>
+              <div class="cert-thumb-date">Apr 2026</div>
+            </div>
+            <div class="gallery-hover-label">Open Certificate →</div>
+          </div>
+          <div class="gallery-caption">Coursera — Chemistry</div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="certificate">
+          <div class="gallery-img-wrap cert-thumb" onclick="openPDF(CISCO_PDF, 'Cisco Modern AI')">
+            <div class="cert-thumb-inner">
+              <div class="cert-thumb-logo" style="color:#00bceb;">cisco</div>
+              <div class="cert-thumb-title">Introduction to Modern AI</div>
+              <div class="cert-thumb-issuer">Cisco Networking Academy</div>
+              <div class="cert-thumb-date">10 Feb 2026</div>
+            </div>
+            <div class="gallery-hover-label">Open Certificate →</div>
+          </div>
+          <div class="gallery-caption">Cisco — Modern AI</div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="certificate">
+          <div class="gallery-img-wrap cert-thumb" onclick="openPDF(YUVA_PDF, 'Yuva AI for All')">
+            <div class="cert-thumb-inner">
+              <div class="cert-thumb-logo" style="color:#e63b2e;">INDIAai</div>
+              <div class="cert-thumb-title">Yuva AI for All</div>
+              <div class="cert-thumb-issuer">NASSCOM FutureSkills</div>
+              <div class="cert-thumb-date">09 Feb 2026</div>
+            </div>
+            <div class="gallery-hover-label">Open Certificate →</div>
+          </div>
+          <div class="gallery-caption">NASSCOM — Yuva AI</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt-bg" id="contact">
+    <div class="container">
+      <div class="section-label">05</div>
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-lead">Let's connect.</p>
+          <p class="contact-body">
+            Feel free to reach out for collaborations, opportunities, or just a conversation.
+          </p>
+        </div>
+        <div class="contact-right reveal">
+          <a href="mailto:scfu425067@mitvpu.ac.in" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">scfu425067@mitvpu.ac.in</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/omar-attar-06850a401" target="_blank" class="contact-item">
+            <span class="contact-icon">in</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Omar Attar</span>
+            </div>
+          </a>
+          <a href="https://github.com/omer10ahmed47-ai" target="_blank" class="contact-item">
+            <span class="contact-icon">⌥</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">omer10ahmed47-ai</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Omar Shakeel Ahmed Attar</span>
+      <span class="footer-copy">© 2026 · MIT Vishwaprayag University · B.Tech CSE AIML</span>
+      <a href="#home" class="footer-back">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- PDF MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span id="modalTitle">Certificate</span>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <iframe id="modalFrame" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- PHOTO MODAL -->
+  <div class="modal-overlay" id="photoModal" onclick="closePhotoModal()">
+    <div class="photo-modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close photo-modal-close" onclick="closePhotoModal()">✕</button>
+      <img id="photoModalImg" src="" alt="Omar Attar"/>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
